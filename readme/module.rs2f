@@ -9,3 +9,7 @@ description: |
   Highlight/hides, when configured through alt-clicks in the game world, will
   take precedence over all settings in this filter.
 */
+
+meta {
+  name = "NismoLootFilter";
+}

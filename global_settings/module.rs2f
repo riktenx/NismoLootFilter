@@ -1,0 +1,39 @@
+
+/*@ define:module:global_settings
+---
+name: Global Settings
+subtitle: Global Styling and Configuration
+description: |
+  Manage Global-Level Settings Including Item Icons and Despawn Intervals
+  
+  Depawn Timers config needs to be disabled for this feature to work.
+*/
+
+meta {
+    name = "Nismo Filter";
+}
+
+/*@ define:input:global_settings
+type: boolean
+label: Enable Item Icons
+*/
+#define ITEM_ICONS false
+
+/*@ define:input:global_settings
+type: number
+label: 'Do not display despawn timers for items costing less than:'
+*/
+#define GLOBAL_DESPAWN_TIMER 1000
+
+#define GLOBAL_STYLING
+
+apply (ITEM_ICONS) {
+    icon = CurrentItem();
+}
+apply (name:"*") {
+    GLOBAL_STYLING
+    showDespawn = true;
+}
+apply (value:<GLOBAL_DESPAWN_TIMER) {
+    showDespawn = false;
+}

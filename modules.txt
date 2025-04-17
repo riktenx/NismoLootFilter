@@ -1,3 +1,7 @@
 readme
 general/highlight
 general/hide
+setup_properties
+global_settings
+item_tiers
+unique_items

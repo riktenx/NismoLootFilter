@@ -1,0 +1,16 @@
+
+/*@ define:module:setup
+---
+name: Setup
+subtitle: Check these settings first to ensure filter works as expected
+description: |
+  # Setup
+  
+  Navigate to Loot Filter Plugin Settings
+  
+  Ensure *Text Accent* is **Use Filter**
+  
+  Ensure *Font Mode* is **Plugin**
+  
+  Ensure *Item Value Rules* is set to **After Filter**
+*/
